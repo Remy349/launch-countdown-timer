@@ -1,10 +1,14 @@
 import React from 'react'
+import Footer from './components/Footer'
 
 function App () {
   return (
-    <main>
-      <h1>OK</h1>
-    </main>
+    <>
+      <main className='main container launch'>
+        <h1 className='launch__title'>We're launching soon</h1>
+      </main>
+      <Footer />
+    </>
   )
 }
 

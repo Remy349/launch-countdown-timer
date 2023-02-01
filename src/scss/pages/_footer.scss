@@ -1,0 +1,20 @@
+@use '../utils/_colors.scss' as c;
+
+.footer {
+  position: absolute;
+  z-index: 10;
+  bottom: 2rem;
+  left: calc(50% - 5rem);
+  display: flex;
+  column-gap: 2rem;
+
+  &__link {
+    font-size: 2rem;
+    color: c.$Grayish-blue;
+    transition: all .3s;
+
+    &:hover {
+      color: c.$Soft-red;
+    }
+  }
+}

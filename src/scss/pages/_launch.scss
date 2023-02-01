@@ -1,0 +1,11 @@
+@use '../utils/_colors.scss' as c;
+
+.launch {
+  &__title {
+    text-align: center;
+    color: c.$White;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 1.25rem;
+  }
+}

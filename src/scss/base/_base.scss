@@ -1,5 +1,46 @@
+@use '../utils/_colors.scss' as c;
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: c.$Very-dark-black-blue;
+  background-image: url(/src/images/bg-stars.svg);
+  background-size: contain;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(/src/images/pattern-hills.svg);
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position-x: 80%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  max-width: 768px;
 }
