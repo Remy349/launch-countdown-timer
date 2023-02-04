@@ -37,10 +37,12 @@ a {
 #root {
   position: relative;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
-  max-width: 768px;
 }
