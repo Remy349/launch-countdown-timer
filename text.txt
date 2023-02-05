@@ -1,4 +1,0 @@
-Days
-Hours
-Minutes
-Seconds

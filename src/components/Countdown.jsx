@@ -16,13 +16,21 @@ const Countdown = () => {
 
   const countdown = () => {
     const currentYear = new Date().getFullYear()
-    const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`)
+    const newYearTime = new Date(`Jan 01 ${currentYear + 1} 00:00:00`)
 
     const currentTime = new Date()
     const diff = newYearTime - currentTime
 
+    let day = '0' + Math.floor(diff / DAY)
+
+    if (day.length > 3) {
+      day = day.slice(-3)
+    } else {
+      day = day.slice(-2)
+    }
+
     setTimeLeft({
-      days: Math.floor(diff / DAY),
+      days: day,
       hours: ('0' + (Math.floor(diff / HOUR) % 24)).slice(-2),
       minutes: ('0' + (Math.floor(diff / MINUTE) % 60)).slice(-2),
       seconds: ('0' + (Math.floor(diff / SECOND) % 60)).slice(-2)

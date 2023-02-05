@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <FooterLink>
-        <FaFacebookSquare className='footer__link' />
+        <FaFacebookSquare className='footer__icon' />
       </FooterLink>
       <FooterLink>
-        <FaPinterest className='footer__link' />
+        <FaPinterest className='footer__icon' />
       </FooterLink>
       <FooterLink>
-        <FaInstagram className='footer__link' />
+        <FaInstagram className='footer__icon' />
       </FooterLink>
     </footer>
   )
