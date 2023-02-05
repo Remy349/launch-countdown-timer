@@ -1,0 +1,52 @@
+@media screen and (max-width: 360px) {
+  .launch {
+    &__title {
+      margin-top: -8rem;
+    }
+
+    &__countdown {
+      flex-wrap: wrap;
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .launch {
+    &__countdown {
+      column-gap: 1.5rem;
+
+      &-card {
+        font-size: 2.5rem;
+        height: 6rem;
+        width: 6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .launch {
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__countdown {
+      &-card {
+        font-size: 3rem;
+        height: 7rem;
+        width: 8rem;
+      }
+
+      &-time {
+        font-size: .75rem;
+      }
+    }
+  }
+}

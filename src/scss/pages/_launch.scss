@@ -29,11 +29,16 @@
       background-color: c.$Dark-desaturated-blue;
       border-radius: .3rem;
       font-size: 2rem;
-      padding: 1rem;
       position: relative;
       z-index: 10;
       overflow: hidden;
       box-shadow: 0 .4rem rgba(0,0,0,.3);
+      text-align: center;
+      height: 5rem;
+      width: 5rem;
+      display: inherit;
+      align-items: center;
+      justify-content: center;
 
       &_top {
         position: absolute;
